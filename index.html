@@ -1,0 +1,811 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 06 of (100DaysOfCode)</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+<!-- SwiperJS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script type="module" crossorigin src="../assets/index-lLsKjRmb.js"></script>
+    <link rel="stylesheet" crossorigin href="../assets/index-CpW-8YVJ.css">
+  </head>
+  <body class="overflow-x-hidden relative">
+
+
+    <!-- Header Sections Start Here -->
+    <header class="header fixed top-0 left-0  w-full bg-transparent z-[999]">
+      <div class="container mx-auto px-6">
+
+        <!-- Desktop Navigation Start Here -->
+        <nav class="nav w-full flex justify-between items-center py-3">
+
+          <div class="logo-block">
+            <h2 class="logo">
+              <a href="" class="font-bold text-3xl text-black">
+                Fashioner
+              </a>
+            </h2>
+          </div>
+
+          <div class="menu-block hidden w-full lg:flex items-center justify-center gap-1 xl:gap-4">
+            <a href="" class="menu-item text-xl font-bold cursor-pointer py-3 rounded-xl px-4 xl:px-6 transition-colors duration-300 hover:bg-black hover:text-white">Home</a>
+            <a href="" class="menu-item text-xl font-bold cursor-pointer py-3 rounded-xl px-4 xl:px-6 transition-colors duration-300 hover:bg-black hover:text-white">New Arrivals</a>
+            <a href="" class="menu-item text-xl font-bold cursor-pointer py-3 rounded-xl px-4 xl:px-6 transition-colors duration-300 hover:bg-black hover:text-white">Gown</a>
+            <a href="" class="menu-item text-xl font-bold cursor-pointer py-3 rounded-xl px-4 xl:px-6 transition-colors duration-300 hover:bg-black hover:text-white">Skirt</a>
+            <a href="" class="menu-item text-xl font-bold cursor-pointer py-3 rounded-xl px-4 xl:px-6 transition-colors duration-300 hover:bg-black hover:text-white">Blouse</a>
+            <a href="" class="menu-item text-xl font-bold cursor-pointer py-3 rounded-xl px-4 xl:px-6 transition-colors duration-300 hover:bg-black hover:text-white">Trousers</a>
+          </div>
+
+          <div class="buttons-block flex items-center justify-center">
+
+            <!-- Desktop Buttons Start here -->
+             <div class="desktop-buttons items-center gap-6 justify-center hidden lg:flex">
+                <span class="cart-icon text-3xl text-black cursor-pointer transition-colors duration-300 hover:text-red-500">
+                      <i class="ri-luggage-cart-line"></i>
+                </span>
+
+                <a href="" class="py-3 px-7 bg-[#FF5A5F] rounded-xl text-lg font-bold text-white uppercase transition-colors duration-300 hover:bg-black">Login</a>
+            </div>
+            <!-- Desktop Buttons End here -->
+
+            <div class="hamburger lg:hidden">
+              <span class="p-3 cursor-pointer text-2xl transition-colors duration-300 hover:text-red-600">
+                <i class="ri-menu-3-line"></i>
+              </span>
+            </div>
+
+          </div>
+
+        </nav>
+        <!-- Desktop Navigation End Here -->
+
+      </div>
+
+      <!-- Mobile Menus Block Start Here -->
+       <div class="mobile-menu-block">
+        <div class="menu-contents-wrapper pt-24 h-full w-full relative">
+
+        <!-- Close Icon Start -->
+        <span class="close-icon text-white absolute right-6 top-6 text-2xl font-bold transition-colors duration-500 hover:text-red-700 cursor-pointer">
+          <i class="ri-close-large-line"></i>
+        </span>
+        <!-- Close Icon End -->
+
+        <!-- Mobile menus Start Here -->
+        <div class="menu-items w-full flex gap-2 flex-col">
+
+          <a class="mobile-menu-item text-white relative bg-blue-950 overflow-hidden before:transition-all before:duration-500  w-full px-6 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-[#FF5A5F] before:top-0 before:left-0 b before:-translate-x-full before:-translate-y-full before:z-[1] hover:before:translate-y-0 hover:before:translate-x-0 hover:border-0 flex justify-between hover:text-light-creem"  href="#">
+            <span class="menu-text z-[3]">Shop</span>
+            <span class="menu-icon z-[3] text-blue-950 animate-spin font-bold"><i class="ri-loop-right-line"></i></span>
+          </a>
+
+          <a class="mobile-menu-item text-white relative bg-blue-950 overflow-hidden before:transition-all before:duration-500  w-full px-6 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-[#FF5A5F] before:top-0 before:left-0 b before:-translate-x-full before:-translate-y-full before:z-[1] hover:before:translate-y-0 hover:before:translate-x-0 hover:border-0 flex justify-between hover:text-light-creem"  href="#">
+            <span class="menu-text z-[3]">New Arrivals</span>
+            <span class="menu-icon z-[3] text-blue-950 animate-spin font-bold"><i class="ri-loop-right-line"></i></span>
+          </a>
+
+          <a class="mobile-menu-item text-white relative bg-blue-950 overflow-hidden before:transition-all before:duration-500  w-full px-6 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-[#FF5A5F] before:top-0 before:left-0 b before:-translate-x-full before:-translate-y-full before:z-[1] hover:before:translate-y-0 hover:before:translate-x-0 hover:border-0 flex justify-between hover:text-light-creem"  href="#">
+            <span class="menu-text z-[3]">Gown</span>
+            <span class="menu-icon z-[3] text-blue-950 animate-spin font-bold"><i class="ri-loop-right-line"></i></span>
+          </a>
+
+          <a class="mobile-menu-item text-white relative bg-blue-950 overflow-hidden before:transition-all before:duration-500  w-full px-6 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-[#FF5A5F] before:top-0 before:left-0 b before:-translate-x-full before:-translate-y-full before:z-[1] hover:before:translate-y-0 hover:before:translate-x-0 hover:border-0 flex justify-between hover:text-light-creem"  href="#">
+            <span class="menu-text z-[3]">Skirt</span>
+            <span class="menu-icon z-[3] text-blue-950 animate-spin font-bold"><i class="ri-loop-right-line"></i></span>
+          </a>
+
+          <a class="mobile-menu-item text-white relative bg-blue-950 overflow-hidden before:transition-all before:duration-500  w-full px-6 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-[#FF5A5F] before:top-0 before:left-0 b before:-translate-x-full before:-translate-y-full before:z-[1] hover:before:translate-y-0 hover:before:translate-x-0 hover:border-0 flex justify-between hover:text-light-creem"  href="#">
+            <span class="menu-text z-[3]">Blouse</span>
+            <span class="menu-icon z-[3] text-blue-950 animate-spin font-bold"><i class="ri-loop-right-line"></i></span>
+          </a>
+
+          <a class="mobile-menu-item text-white relative bg-blue-950 overflow-hidden before:transition-all before:duration-500  w-full px-6 py-3 text-xl cursor-pointer before:w-full before:h-full before:absolute before:bg-[#FF5A5F] before:top-0 before:left-0 b before:-translate-x-full before:-translate-y-full before:z-[1] hover:before:translate-y-0 hover:before:translate-x-0 hover:border-0 flex justify-between hover:text-light-creem"  href="#">
+            <span class="menu-text z-[3]">Trousers</span>
+            <span class="menu-icon z-[3] text-blue-950 animate-spin font-bold"><i class="ri-loop-right-line"></i></span>
+          </a>
+
+
+        </div>
+        <!-- Mobile menus End Here -->
+
+        <!-- Mobile Menu Buttons Start here -->
+         <div class="mobile-buttons-block flex items-center justify-between mt-24 px-3 gap-2">
+
+          <span class="cart text-white text-2xl bg-blue-950 rounded-md cursor-pointer p-3 transition-colors duration-300 hover:bg-[#FF5A5F]">
+            <i class="ri-luggage-cart-fill"></i>
+          </span>
+
+          <a href="" class="text-white py-3 w-full text-center text-xl bg-blue-950 rounded-md transition-colors duration-300 hover:bg-[#FF5A5F]">Login</a>
+
+          <a href="" class="text-white py-3 w-full text-center text-xl bg-blue-950 rounded-md transition-colors duration-300 hover:bg-[#FF5A5F]">Register</a>
+         </div>
+        <!-- Mobile Menu Buttons End here -->
+
+        </div>
+       </div>
+      <!-- Mobile Menus Block End Here -->
+
+    </header>
+    <!-- Header Sections End Here -->
+
+
+    <!-- Hero Sections Start Here -->
+    <section class="hero">
+      <div class="container mx-auto px-6 py-12 pb-3 pt-12 lg:pb-6 lg:pt-24">
+        
+        <!-- Hero Contents Row Start Here -->
+         <div class="hero-contents-row bg-zinc-700 w-full mx-auto rounded-xl flex flex-col-reverse sm:flex-row sm:mx-auto">
+
+          <!-- Hero Text Contents Col Start Here -->
+            <div class="hero-text-contents-col p-8 flex items-start flex-col justify-center w-full gap-2 sm:w-1/2 sm:p-6 md:gap-5 lg:gap-7 xl:p-24">
+
+              <h1 class="text-xl text-red-600 font-bold sm:text-xl md:text-3xl lg:text-4xl xl:text-6xl">
+                #1  SHOP FOR WOMEN FASHION DRESSES
+              </h1>
+
+              <p class="text-white text-sm sm:text-sm lg:text-xl">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna  aliqua. Ut enim ad minim veniam,
+              </p>
+
+              <a href="" class="bg-white py-3 px-12 text-sm font-medium rounded-xl transition-colors duration-300 hover:bg-red-500 hover:text-white sm:text-sm lg:text-xl"> OUR LATEST DESIGNS </a>
+
+            </div>
+          <!-- Hero Text Contents Col End Here -->
+
+          <!-- Hero image col start here -->
+           <div class="hero-image-col w-full flex items-center justify-center flex-col sm:w-1/2 sm:items-end sm:flex-row">
+            <img src="../assets/Hero-img-DGu_Z1EY.png" alt="" class="w-96 sm:w-full">
+           </div>
+          <!-- Hero image col end here -->
+
+         </div>
+        <!-- Hero Contents Row End Here -->
+
+      </div>
+    </section>
+    <!-- Hero Sections End Here -->
+
+
+    <!-- Latest Product Sections Start Here -->
+    <section class="latest-product">
+      <div class="container mx-auto px-6 py-6 pb-3 pt-12 lg:pb-6 lg:pt-24">
+        
+        <!-- Section title wrapper start here -->
+         <div class="latest-product-title-block py-6">
+          <h2 class="text-[#FF5A5F] text-2xl font-black sm:text-3xl lg:text-4xl">
+            LATEST PRODUCTS
+          </h2>
+         </div>
+        <!-- Section title wrapper End here -->
+
+        <!-- Latest product row start here -->
+        <div class="latets-product-row w-full">
+
+          <div class="swiper mySlider-1">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="latest-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="w-full text-xl uppercase font-medium py-3 px-2 text-center block bg-[#FF5A5F] mt-4 rounded-xl text-white ">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="latest-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="w-full text-xl uppercase font-medium py-3 px-2 text-center block bg-[#FF5A5F] mt-4 rounded-xl text-white ">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="latest-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="w-full text-xl uppercase font-medium py-3 px-2 text-center block bg-[#FF5A5F] mt-4 rounded-xl text-white ">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="latest-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="w-full text-xl uppercase font-medium py-3 px-2 text-center block bg-[#FF5A5F] mt-4 rounded-xl text-white ">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="latest-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="w-full text-xl uppercase font-medium py-3 px-2 text-center block bg-[#FF5A5F] mt-4 rounded-xl text-white ">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="latest-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="w-full text-xl uppercase font-medium py-3 px-2 text-center block bg-[#FF5A5F] mt-4 rounded-xl text-white ">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+       
+             
+            </div>
+
+         
+            <!-- If we need navigation buttons -->
+          <div class="slider-buttons flex w-full justify-center items-center gap-4 py-6">
+            <div class="button-prev block">
+              <i class="ri-arrow-left-circle-fill text-3xl block cursor-pointer transition-colors duration-500 hover:text-[#FF5A5F] md:text-5xl"></i>
+            </div>
+            <div class="button-next block">
+              <i class="ri-arrow-right-circle-fill text-3xl  block cursor-pointer transition-colors duration-500 hover:text-[#FF5A5F] md:text-5xl"></i>
+            </div>
+          </div>
+          
+          </div>
+
+         
+        </div>
+        <!-- Latest product row end here -->
+
+      </div>
+    </section>
+    <!-- Latest Product Sections End Here -->
+
+    <!-- Gowins Product Sections Start Here -->
+    <section class="gowins-product w-full">
+      <div class="container mx-auto px-6 py-6 pb-3 pt-12 lg:pb-6 lg:pt-24">
+        
+        <!-- Section title wrapper start here -->
+        <div class="gowins-product-title-block py-6">
+          <h2 class="text-[#FF5A5F] text-2xl font-black sm:text-3xl lg:text-4xl">
+            GOWNS
+          </h2>
+        </div>
+        <!-- Section title wrapper End here -->
+
+          <!-- If we need navigation buttons -->
+          <div class="slider-buttons flex justify-end items-center gap-4 py-2">
+            <div class="button-prev-1 block">
+              <i class="ri-arrow-left-circle-fill text-3xl block cursor-pointer transition-colors duration-500 hover:text-[#FF5A5F] md:text-5xl"></i>
+            </div>
+            <div class="button-next-1 block">
+              <i class="ri-arrow-right-circle-fill text-3xl  block cursor-pointer transition-colors duration-500 hover:text-[#FF5A5F] md:text-5xl"></i>
+            </div>
+          </div>
+
+        <!-- Growns product row start here -->
+        <div class="growns-product-row w-full z-[-1]">
+
+          <div class="swiper mySlider-2">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper ">
+            
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="gowins-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="add-to-cart">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="latest-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="add-to-cart">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="gowins-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="add-to-cart">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="gowins-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="add-to-cart">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="gowins-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="add-to-cart">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+                <!-- single product start here -->
+                <div class="signle-product swiper-slide w-full p-2">
+                  <div class="single-product-content w-full border rounded-xl shadow-xl">
+
+                  <div class="gowins-product-img w-full">
+                    <img src="./assets/Product-izf39cZn.png" alt="product one" class="w-full h-full object-cover">
+                  </div>
+
+                    <div class="product-info p-4">
+                      <h2 class="product-title-with-price w-full flex justify-between">
+                        <span class="text-xl font-bold text-black">BLOUSE </span>
+                        <span class="font-medium text-[#FF5A5F]">$60.88 </span>
+                      </h2>
+
+                      <p class="text-sm text-black py-2 ">
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                        Lorem ipsum dolor sit amet, abc consectetur adipisicing elit 
+                      </p>
+
+                      <a href="" class="add-to-cart">Add to cart </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product end here -->
+
+            </div>
+          </div>
+
+        </div>
+        <!--  Growns product row end here -->
+
+      </div>
+    </section>
+    <!-- gowins Product Sections End Here -->
+
+
+    <!-- CTA Sections Start Here -->
+    <section class="cta-section">
+      <div class="container mx-auto px-6 lg:px-24 pb-3 pt-12 lg:pb-6 lg:pt-24">
+
+        <!-- Cta Row Start Here -->
+        <div class="cta-content-row bg-[#FF5A5F] flex flex-col sm:flex-row px-6 xl:px-36 py-12 w-full h-full rounded-xl ">
+
+          <!-- CTA Col Start Here -->
+          <div class="cta-contents-col flex flex-col items-start justify-center w-full sm:w-1/2 lg:w-2/3">
+            <h2 class="text-2xl font-bold text-white sm:text-3xl xl:text-6xl">
+              FASHIONER BODYWEAR
+            </h2>
+
+            <h3 class="text-2xl font-bold text-black sm:text-3xl xl:text-6xl py-3 lg:py-6">
+              For every body
+            </h3>
+
+            <a href="" class=" w-full text-center sm:w-fit py-3 px-16 border border-black text-xl uppercase block lg:mt-10 rounded-xl font-medium"> 
+              Shop Now 
+            </a>
+          </div>
+          <!-- CTA Col End Here -->
+
+          <!-- CTA Col Start Here -->
+          <div class="cta-image-col w-full h-full flex items-center justify-center sm:w-1/2 lg:w-1/3">
+            <img src="./assets/cta-image-NRf69ktb.png" alt="cta image">
+          </div>
+          <!-- CTA Col Start Here -->
+
+        </div>
+        <!-- Cta Row End Here -->
+
+      </div>
+    </section>
+    <!-- CTA Sections End Here -->
+
+
+    <!-- Recommended Sections Start Here -->
+    <section class="recommended-section">
+      <div class="container mx-auto px-6 lg:px-24 pb-3 pt-12 lg:pb-6 lg:pt-24">
+        
+
+        <!-- Recommended Proudcts Title Start Here -->
+         <div class="recommended-section-title-block pb-12 w-full lg:pb-24">
+          <h2 class="text-center text-black text-3xl font-bold sm:text-4xl md:text-5xl">
+            RECOMMENDED FOR YOU
+          </h2>
+         </div>
+        <!-- Recommended Proudcts Title End Here -->
+
+
+        <!-- Recommended Row Start Here -->
+        <div class="recommended-row flex flex-col items-center justify-center gap-4 sm:flex-row lg:gap-20">
+
+        <!-- Recommended Col Start Here -->
+          <div class="recommended-col flex flex-col items-center justify-center">
+            <div class="recom-img-wrapper w-full flex items-center justify-center">
+              <img src="./assets/recommended-1-DylfGdYe.png" alt="" class="w-full h-full">
+            </div>
+            <div class="recom-title-wrapper py-3 w-full sm:py-6">
+              <h3 class="text-lg font-medium text-center cursor-pointer sm:text-2xl">TROUSERS</h3>
+            </div>
+          </div>
+        <!-- Recommended Col Start Here -->
+
+        <!-- Recommended Col Start Here -->
+          <div class="recommended-col flex flex-col items-center justify-center">
+            <div class="recom-img-wrapper w-full flex items-center justify-center">
+              <img src="./assets/recommended-2-Bvcft71I.png" alt="">
+            </div>
+            <div class="recom-title-wrapper py-3 w-full">
+              <h3 class="text-lg font-medium text-center cursor-pointer">GOWN</h3>
+            </div>
+          </div>
+        <!-- Recommended Col Start Here -->
+
+        <!-- Recommended Col Start Here -->
+          <div class="recommended-col flex flex-col items-center justify-center">
+            <div class="recom-img-wrapper w-full flex items-center justify-center">
+              <img src="./assets/recommended-3-5Yf2P1EP.png" alt="">
+            </div>
+            <div class="recom-title-wrapper py-3 w-full">
+              <h3 class="text-lg font-medium text-center cursor-pointer">SHIRTS</h3>
+            </div>
+          </div>
+        <!-- Recommended Col Start Here -->
+
+        </div>
+        <!-- Recommended Row Start Here -->
+
+
+      </div>
+    </section>
+    <!-- Recommended Sections End Here -->
+
+
+    <!-- Newsletter Sections Start Here -->
+    <section class="newsletter">
+      <div class="container mx-auto px-6 lg:px-24 pb-3 pt-12 lg:pb-6 lg:pt-24">
+
+        <!-- Newsletter row Start Here -->
+        <div class="newsletter-wrapper relative h-full w-full bg-slate-300 flex flex-col gap-10 p-3 rounded-xl pb-0 sm:flex-row sm:items-center">
+        
+          <!-- Newsletter col Start Here -->
+          <div class="newslatter-contents p-6 bg-white shadow-xl rounded-xl xl:absolute xl:left-16 xl:top-16 xl:w-[650px]">
+            <h2 class="text-xl font-bold py-3 sm:text-2xl xl:text-4xl">FASHIONER NEWSLETTER</h2>
+            <p class="text-lg font-normal py-2">Get the latest news from the Fashioner  regarding new 
+              products, exclusive specials, lifestyle and fashion trends.</p>
+              <a href="" class="add-to-cart">SUBSCRIBE NOW</a>
+          </div>
+          <!-- Newsletter col end Here -->
+
+          <!-- Newsletter col Start Here -->
+          <div class="newsletter-img-wrapper w-full h-full xl:flex xl:items-end xl:justify-end xl:pt-16">
+            <img src="./assets/newsletter-BACGCM3J.png" alt="newsletter image" class=" sm:w-[250px] h-full" >
+          </div>
+          <!-- Newsletter col end Here -->
+
+        </div>
+        <!-- Newsletter row end Here -->
+ 
+      </div>
+    </section>
+    <!-- Newsletter Sections End Here -->
+
+
+    <!-- footer Sections Start Here -->
+    <footer class="footer bg-slate-100 mt-12">
+      <div class="container mx-auto px-6 lg:px-24 pt-12 lg:pt-24">
+        
+        <!-- Footer Row Start Here -->
+         <div class="footer-row flex flex-wrap items-start content-between justify-between pb-12 lg:pb-20 w-full mx-auto">
+
+          <!-- Footer single col start here -->
+           <div class="footer-single-col flex flex-col gap-4 text-black w-1/4 sm:px-6 lg:w-1/4 lg:px-12 mb-10 lg:mb-0"> 
+
+            <div class="single-footer-blog">
+              
+            <h2 class="text-xl font-bold pb-2">
+              FROM OUR BLOG
+            </h2>
+
+            <img src="./assets/footer-blog-CCuFF2X7.png" alt="image" class="w-full pb-2">
+
+            <p class="text-sm sm:text-lg text-black">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quos eligendi iusto quo,
+            </p>
+            </div>
+            
+           </div>
+          <!-- Footer single col end here -->
+
+           <!-- Footer single col start here -->
+           <div class="footer-single-col flex flex-col gap-4 text-black w-1/2 px-6 lg:w-1/4 lg:px-12 mb-10 lg:mb-0"> 
+
+            <h2 class="text-xl font-bold">
+              CONTACT
+            </h2>
+
+            <ul>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">LIVE CHAT</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Customer Care</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Mon. - Fri. 9: 30 -15:30</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">+2349074748664</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Whatsapp</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Email us</a></li>
+            </ul>
+           </div>
+          <!-- Footer single col end here -->
+
+          <!-- Footer single col start here -->
+          <div class="footer-single-col flex flex-col gap-4 text-black w-1/2 px-6 lg:w-1/4 lg:px-12 mb-10 lg:mb-0"> 
+
+            <h2 class="text-xl font-bold">
+              SERVICES
+            </h2>
+
+            <ul>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Free Delivery</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Packaging</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Store Package</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Free Shirts</a></li>
+              <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Tey Troursers </a></li>
+            </ul>
+            </div>
+          <!-- Footer single col end here -->
+
+            <!-- Footer single col start here -->
+            <div class="footer-single-col flex flex-col gap-4 text-black w-1/2 px-6 lg:w-1/4 lg:px-12 mb-10 lg:mb-0"> 
+
+              <h2 class="text-xl font-bold">
+                OUR COMPANY
+              </h2>
+  
+              <ul>
+                <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Careers</a></li>
+                <li class="text-sm sm:text-lg font-medium text-black py-1"><a href="">Investor Relations</a></li>
+              </ul>
+              </div>
+            <!-- Footer single col end here -->
+
+         </div>
+        <!-- Footer Row End Here -->
+
+        <!-- Footer bottom Start Here -->
+        <div class="footer-bottom w-full flex items-center justify-center flex-wrap sm:flex-nowrap pb-6 sm:pb-12">
+          <h2 class="text-sm font-medium sm:text-center xl:text-xl w-1/2 md:w-1/4"> <i class="ri-arrow-right-wide-line"></i> DISCOVER MORE</h2>
+          <h2 class="text-sm font-medium sm:text-center xl:text-xl w-1/2 md:w-1/4"> <i class="ri-arrow-right-wide-line"></i> HELP & CONTACT</h2>
+          <h2 class="text-sm font-medium sm:text-center xl:text-xl w-1/2 md:w-1/4"> <i class="ri-arrow-right-wide-line"></i> CUST. SERVICE</h2>
+          <h2 class="text-sm font-medium sm:text-center xl:text-xl w-1/2 md:w-1/4"> <i class="ri-arrow-right-wide-line"></i> COM. PROFILE</h2>
+        </div>
+        <!-- Footer bottom end Here -->
+
+        <!-- Footer Social block Start  -->
+         <div class="footer-social-part-row flex flex-col py-6 lg:py-12 sm:flex-row justify-between items-center">
+
+          <div class="footer-socila flex gap-2 items-center justify-center font-medium w-full sm:w-1/2">
+            <h3 class="text-lg text-black ">FOLLOW US</h3>
+            <span class="facebook text-2xl"> <a href=""> <i class="ri-facebook-box-fill"> </i></a> </span>
+            <span class="twitter text-2xl"> <a href=""> <i class="ri-twitter-fill"></i> </a> </span>
+            <span class="instagram text-2xl"> <a href=""> <i class="ri-instagram-fill"></i> </a> </span>
+            <span class="youtube text-2xl"> <a href=""> <i class="ri-youtube-fill"></i> </a> </span>
+          </div>
+
+
+          <div class="payment-icons flex items-center justify-center font-medium gap-2 w-full sm:w-1/2">
+            <h3 class="text-lg text-black ">WE ACCCEPT</h3>
+            <span class="facebook text-2xl"> <a href=""> <i class="ri-paypal-fill"></i> </a></span>
+            <span class="facebook text-2xl"> <a href=""> <i class="ri-paypal-fill"></i> </a></span>
+            <span class="facebook text-2xl"> <a href=""> <i class="ri-paypal-fill"></i> </a></span>
+          </div>
+
+         </div>
+        <!-- Footer Social block End  -->
+
+      </div>
+
+      <!-- footer copyright block start here -->
+      <div class="footer-copyright w-screen py-12 lg:py-20 bg-slate-200">
+        <h2 class="text-xl font-bold text-center">COPYRIGHT 2022 - FASHIONER</h2>
+      </div>
+      <!-- footer copyright block start here -->
+
+    </footer>
+    <!-- footer Sections End Here -->
+
+    <div id="app">
+
+    </div>
+  </body>
+</html>
+
